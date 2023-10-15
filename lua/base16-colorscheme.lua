@@ -149,7 +149,7 @@ function M.setup(colors, config)
     hi.Exception                          = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil }
     hi.FoldColumn                         = { guifg = M.colors.base0C, guibg = M.colors.base00, gui = nil, guisp = nil }
     hi.Folded                             = { guifg = M.colors.base03, guibg = M.colors.base01, gui = nil, guisp = nil }
-    hi.IncSearch                          = { guifg = M.colors.base01, guibg = M.colors.base09, gui = 'none', guisp = nil }
+    hi.IncSearch                          = { guifg = M.colors.base01, guibg = M.colors.base02, gui = 'none', guisp = nil }
     hi.Italic                             = { guifg = nil, guibg = nil, gui = 'none', guisp = nil }
     hi.Macro                              = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil }
     hi.MatchParen                         = { guifg = nil, guibg = M.colors.base03, gui = nil, guisp = nil }
@@ -161,7 +161,7 @@ function M.setup(colors, config)
     hi.SpecialKey                         = { guifg = M.colors.base03, guibg = nil, gui = nil, guisp = nil }
     hi.TooLong                            = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil }
     hi.Underlined                         = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil }
-    hi.Visual                             = { guifg = nil, guibg = M.colors.base02, gui = nil, guisp = nil }
+    hi.Visual                             = { guifg = M.colors.base00, guibg = M.colors.base05, gui = nil, guisp = nil }
     hi.VisualNOS                          = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil }
     hi.WarningMsg                         = { guifg = M.colors.base08, guibg = nil, gui = nil, guisp = nil }
     hi.WildMenu                           = { guifg = M.colors.base08, guibg = M.colors.base0A, gui = nil, guisp = nil }
@@ -169,7 +169,7 @@ function M.setup(colors, config)
     hi.Conceal                            = { guifg = M.colors.base0D, guibg = M.colors.base00, gui = nil, guisp = nil }
     hi.Cursor                             = { guifg = M.colors.base00, guibg = M.colors.base05, gui = nil, guisp = nil }
     hi.NonText                            = { guifg = M.colors.base03, guibg = nil, gui = nil, guisp = nil }
-    hi.LineNr                             = { guifg = M.colors.base04, guibg = M.colors.base00, gui = nil, guisp = nil }
+    hi.LineNr                             = { guifg = M.colors.base09, guibg = M.colors.base00, gui = nil, guisp = nil }
     hi.SignColumn                         = { guifg = M.colors.base04, guibg = M.colors.base00, gui = nil, guisp = nil }
     hi.StatusLine                         = { guifg = M.colors.base05, guibg = M.colors.base02, gui = 'none', guisp = nil }
     hi.StatusLineNC                       = { guifg = M.colors.base04, guibg = M.colors.base01, gui = 'none', guisp = nil }
@@ -456,7 +456,7 @@ function M.setup(colors, config)
             hi.TelescopePreviewTitle = { guifg = darkercursorline, guibg = M.colors.base0B, gui = nil, guisp = nil }
             hi.TelescopePromptTitle  = { guifg = darkercursorline, guibg = M.colors.base08, gui = nil, guisp = nil }
             hi.TelescopeResultsTitle = { guifg = darkerbg, guibg = darkerbg, gui = nil, guisp = nil }
-            hi.TelescopeSelection    = { guifg = nil, guibg = darkerstatusline, gui = nil, guisp = nil }
+            hi.TelescopeSelection    = { guifg = M.colors.base00, guibg = darkerstatusline, gui = nil, guisp = nil }
             hi.TelescopePreviewLine  = { guifg = nil, guibg = M.colors.base01, gui = 'none', guisp = nil }
         else
             hi.TelescopeBorder       = { guifg = M.colors.base05, guibg = M.colors.base00, gui = nil, guisp = nil }
@@ -467,10 +467,11 @@ function M.setup(colors, config)
             hi.TelescopePreviewTitle = { guifg = M.colors.base01, guibg = M.colors.base0B, gui = nil, guisp = nil }
             hi.TelescopePromptTitle  = { guifg = M.colors.base01, guibg = M.colors.base08, gui = nil, guisp = nil }
             hi.TelescopeResultsTitle = { guifg = M.colors.base05, guibg = M.colors.base00, gui = nil, guisp = nil }
-            hi.TelescopeSelection    = { guifg = nil, guibg = M.colors.base01, gui = nil, guisp = nil }
+            hi.TelescopeSelection    = { guifg = M.colors.base00, guibg = M.colors.base01, gui = nil, guisp = nil }
             hi.TelescopePreviewLine  = { guifg = nil, guibg = M.colors.base01, gui = 'none', guisp = nil }
         end
     end
+    hi.TelescopeSelection = { guifg = M.colors.base07, guibg = M.colors.base00, gui = nil, guisp = nil }
 
     if M.config.notify then
         hi.NotifyERRORBorder = { guifg = M.colors.base08, guibg = nil, gui = 'none', guisp = nil }
