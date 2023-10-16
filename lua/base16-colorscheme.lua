@@ -681,4 +681,15 @@ M.load_from_shell = function()
     return false
 end
 
+local colors = require('colors.colors')
+M.setup(colors, {
+    telescope = false,
+    indentblankline = true,
+    notify = true,
+    ts_rainbow = true,
+    cmp = true,
+    illuminate = true,
+})
+
+
 return M
