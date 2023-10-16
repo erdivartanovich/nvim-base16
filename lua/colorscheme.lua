@@ -1,1 +1,1 @@
-return require('base16-pywal')
+return require('base16-colorscheme')
